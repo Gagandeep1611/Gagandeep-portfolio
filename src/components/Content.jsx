@@ -35,9 +35,9 @@ const Content = ({ section }) => {
         case "home":
             return (
                 <div className="h-screen w-full flex items-center justify-center pt-20">
-                    <div className="w-[600px] p-6 text-white text-left bg-black/60 rounded-lg">
+                    <div className="w-[650px] bg-black/10 backdrop-blur-md rounded-xl p-8 text-white">
                         <p className="text-base sm:text-lg md:text-lg mb-4">
-                            Hello, I am Gagandeep, a Software Developer with experience in Identity and Access Management (IAM) using SailPoint.
+                            A Software Developer with experience in Identity and Access Management (IAM) using SailPoint.
                             Currently transitioning towards core fullstack/backend development roles with a focus on
                             scalable systems and modern technologies.
                         </p>
@@ -56,33 +56,37 @@ const Content = ({ section }) => {
             return (
                 <div className="h-screen w-full flex items-center justify-center pt-20">
                     <ToastContainer />
-                    <div className="w-[600px] p-6 text-xl font-semibold text-white text-center text-outline">
-                        <p className="text-base sm:text-lg md:text-lg mb-2">
-                            Reach out to me for any queries, projects or hiring opportunities here:
-                        </p>
-                        <p className="text-base sm:text-lg md:text-lg mb-2">
-                            Email: gagandeep161198@gmail.com
-                        </p>
-                        <p className="text-base sm:text-lg md:text-lg">
-                            Phone: (+91) 9650274056
-                        </p>
-                    </div>
+                    <div className="w-[650px] bg-black/10 backdrop-blur-md rounded-xl p-8">
+                        <div className="text-xl font-semibold text-white text-center text-outline">
+                            <p className="text-base sm:text-lg md:text-lg mb-2">
+                                Reach out to me for any queries, projects or hiring opportunities here:
+                            </p>
+                            <p className="text-base sm:text-lg md:text-lg mb-2">
+                                Email: gagandeep161198@gmail.com
+                            </p>
+                            <p className="text-base sm:text-lg md:text-lg">
+                                Phone: (+91) 9650274056
+                            </p>
+                        </div>
 
-                    <div className="w-[600px] p-6 text-black text-center">
-                        <h3 className='text-xl font-semibold text-white text-center'>
-                            Or Send in a quick message.
-                        </h3>
-                        <form className='mt-4 flex flex-col space-y-4' ref={form} onSubmit={sendEmail}>
-                            <input type='email' name="user_email" placeholder="Your Email" required
-                                className='w-full p-3 rounded-md bg-white text-white-border border-gray-600 focus:outline-none focus:border-gray-600' />
-                            <input type='text' name="subject" placeholder="Subject" required
-                                className='w-full p-3 rounded-md bg-white text-white-border border-gray-600 focus:outline-none focus:border-gray-600' />
-                            <textarea name="message" placeholder='Write your message here' rows="4" className='w-full p-3 rounded-md bg-white text-white-border border-gray-600 focus:outline-none focus:border-gray-600'></textarea>
-                            <button type='submit'
-                                className='w-full bg-[#3B3B3B] text-white py-3 font-semibold rounded-md hover:opacity-90 transition'>Send Message</button>
-                        </form>
+                        <div className="text-center mt-6">
+                            <h3 className='text-xl font-semibold text-white'>
+                                Or Send in a quick message.
+                            </h3>
+                            <form className='mt-4 flex flex-col space-y-4' ref={form} onSubmit={sendEmail}>
+                                <input type='email' name="user_email" placeholder="Your Email" required
+                                    className='w-full p-3 rounded-md bg-white text-black border-gray-600 focus:outline-none focus:border-gray-600' />
+                                <input type='text' name="subject" placeholder="Subject" required
+                                    className='w-full p-3 rounded-md bg-white text-black border-gray-600 focus:outline-none focus:border-gray-600' />
+                                <textarea name="message" placeholder='Write your message here' rows="4"
+                                    className='w-full p-3 rounded-md bg-white text-black border-gray-600 focus:outline-none focus:border-gray-600'></textarea>
+                                <button type='submit'
+                                    className='w-full bg-[#3B3B3B] text-white py-3 font-semibold rounded-md hover:opacity-90 transition'>Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
             );
         case "portfolio":
             return (
@@ -91,7 +95,7 @@ const Content = ({ section }) => {
                         {projects.map((project) => (
                             <div
                                 key={project.id}
-                                className="w-full max-w-sm p-3 border border-[#222222] bg-[#141414] rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-[#636363] hover:-translate-y-1 transition-transform duration-300"
+                                className="w-full max-w-sm p-3 bg-white/10 backdrop-blur-md border border-[#222222] rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-[#636363] hover:-translate-y-1 transition-transform duration-300"
                             >
                                 <div className="p-2">
                                     <img
@@ -104,13 +108,13 @@ const Content = ({ section }) => {
                                     <h3 className="text-lg font-bold text-white mb-2">
                                         {project.title}
                                     </h3>
-                                    <p className="text-gray-500 mb-3 pt-2 line-clamp-3">
+                                    <p className="text-gray-300 mb-3 pt-2 line-clamp-3">
                                         {project.description}
                                     </p>
-                                    <div className='flex justify-center text-gray-500 mb-3 pt-2 line-clamp-3'>
-                                        <a className='p-1' href={project.github}>Codebase</a>
-                                        <p className='p-1'> || </p>
-                                        <a className='p-1' href={project.github}>Visit</a>
+                                    <div className="flex justify-center text-gray-300 mb-3 pt-2 line-clamp-3">
+                                        <a className="p-1" href={project.github}>Codebase</a>
+                                        <p className="p-1"> || </p>
+                                        <a className="p-1" href={project.github}>Visit</a>
                                     </div>
                                     <div>
                                         {project.tags.map((tag, index) => (
@@ -125,6 +129,7 @@ const Content = ({ section }) => {
                                 </div>
                             </div>
                         ))}
+
                     </div>
                 </div>
 
