@@ -62,9 +62,6 @@ const Content = ({ section }) => {
                             <p className="text-base sm:text-lg md:text-lg mb-2">
                                 Email: gagandeep161198@gmail.com
                             </p>
-                            <p className="text-base sm:text-lg md:text-lg">
-                                Phone: (+91) 9650274056
-                            </p>
                         </div>
 
                         <div className="text-center mt-6">
