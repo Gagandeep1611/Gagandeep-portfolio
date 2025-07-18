@@ -37,9 +37,7 @@ const Content = ({ section }) => {
                 <div className="h-screen w-full flex items-center justify-center pt-20">
                     <div className="w-[650px] bg-black/10 backdrop-blur-md rounded-xl p-8 text-white">
                         <p className="text-base sm:text-lg md:text-lg mb-4">
-                            A Software Developer with experience in Identity and Access Management (IAM) using SailPoint.
-                            Currently transitioning towards core fullstack/backend development roles with a focus on
-                            scalable systems and modern technologies.
+                            A Software Developer with experience in Identity and Access Management (IAM) using SailPoint. Currently transitioning into fullstack/backend roles, specializing in building scalable systems using the MERN stack (MongoDB, Express.js, React, Node.js), Java, Spring Boot, Docker, and other modern web technologies.
                         </p>
 
                         <p className="text-lg font-semibold mb-2">Education:</p>
