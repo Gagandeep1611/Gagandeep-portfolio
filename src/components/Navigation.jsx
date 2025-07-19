@@ -14,7 +14,7 @@ const Navigation = ({onSelect}) => {
     const handleOnClickEvent = (id) => {
         switch (id) {
             case "resume":
-                window.open("https://drive.google.com/file/d/17yvojKv4zibZTWRJPqs4VLXb23f5qFIG/view?usp=drivesdk", "_blank");
+                window.open("https://drive.google.com/file/d/1cNdmQmSQgOaKcOzZtYNPfhltbsQ_rh_c/view?usp=drivesdk", "_blank");
                 break;
             case "github":
                 window.open("https://github.com/Gagandeep1611", "_blank");
