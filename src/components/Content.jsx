@@ -108,8 +108,12 @@ const Content = ({ section }) => {
                                     </p>
                                     <div className="flex justify-center text-gray-300 mb-3 pt-2 line-clamp-3">
                                         <a className="p-1" href={project.github}>Codebase</a>
+                                        
+                                        {(project.webapp == "")? <></>:
+                                        <>
                                         <p className="p-1"> || </p>
-                                        <a className="p-1" href={project.github}>Visit</a>
+                                        <a className="p-1" href={project.webapp}>Visit</a>
+                                        </> }
                                     </div>
                                     <div>
                                         {project.tags.map((tag, index) => (

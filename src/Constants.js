@@ -1,15 +1,15 @@
 import npmLogo from "./assets/logos/npm.png"
-
+import Expense_tracker from "./assets/logos/Expense_tracker.PNG";
 
 export const projects = [
     {
       id: 0,
-      title: "Dummy Project",
+      title: "Expense Tracker for Budgeting",
       description:
-        "This is a dummy project description just to check if all the courses i took and all the time i spent on learning actually fruits a result.",
-      image: npmLogo,
-      tags: ["In development","In development","In development","In development","In development"],
-      github: "",
+        "Income/expense manager featuring budgeting, charts ,and Excel export.",
+      image: Expense_tracker,
+      tags: ["JavaScript","Node.JS","Mongo.DB","Express.JS","React.JS","HTML", "Tailwind CSS", "REST APIs","JWT Auth", "React Router"],
+      github: "https://github.com/Gagandeep1611/Expense-Tracker",
       webapp: "",
     },
     
