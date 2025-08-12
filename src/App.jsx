@@ -3,13 +3,15 @@ import Content from "./components/Content";
 import '../src/App.css'
 import { useState } from "react";
 import videoBg from "./assets/coffee.mp4";
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
   const [activeSection, setActiveSection] = useState("home")
 
   return (
-    <div className="relative w-screen min-h-screen overflow-hidden">
+    <div className={`relative w-screen min-h-screen overflow-hidden`}>
+      <Analytics/>
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
         src={videoBg}
