@@ -37,13 +37,15 @@ const Content = ({ section }) => {
                 <div className="h-screen w-full flex items-center justify-center pt-20">
                     <div className="w-[650px] bg-black/10 backdrop-blur-md rounded-xl p-8 text-white">
                         <p className="text-base sm:text-lg md:text-lg mb-4">
-                            A Software Developer with experience in Identity and Access Management (IAM) using SailPoint. Currently transitioning into fullstack/backend roles, specializing in building scalable systems using the MERN stack (MongoDB, Express.js, React, Node.js), Java, Spring Boot, Docker, and other modern web technologies.
+                            Software Developer with 2 years of experience building and maintaining Spring Boot–based microservices
+and REST APIs in enterprise environments. Hands-on experience with secure API integrations, SQL data handling. Focused on
+scalable, secure, production-grade backend systems.
                         </p>
 
                         <p className="text-lg font-semibold mb-2">Education:</p>
                         <ul className="list-disc pl-5 space-y-1 text-base sm:text-lg md:text-lg">
-                            <li>Master in Computer Applications, Amity University (2023)</li>
-                            <li>Bachelor in Commerce Honors, Guru Gobind Singh Inderprastha University (2020)</li>
+                            <li>Master in Computer Applications, Amity University (2021 - 2023)</li>
+                            <li>Bachelor in Commerce Honors, Guru Gobind Singh Inderprastha University (2017 - 2020)</li>
                         </ul>
                     </div>
                 </div>
