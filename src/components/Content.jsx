@@ -37,9 +37,9 @@ const Content = ({ section }) => {
                 <div className="h-screen w-full flex items-center justify-center pt-20">
                     <div className="w-[650px] bg-black/10 backdrop-blur-md rounded-xl p-8 text-white">
                         <p className="text-base sm:text-lg md:text-lg mb-4">
-                            Software Developer with 2 years of experience building and maintaining Spring Boot–based microservices
+                            Software Developer with experience in building and maintaining Spring Boot–based microservices
 and REST APIs in enterprise environments. Hands-on experience with secure API integrations, SQL data handling. Focused on
-scalable, secure, production-grade backend systems.
+scalable, secure, production-grade backend systems with AWS CDK.
                         </p>
 
                         <p className="text-lg font-semibold mb-2">Education:</p>
